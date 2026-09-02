@@ -520,7 +520,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Build llama-cpp backend image and run gRPC e2e tests
@@ -537,7 +537,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Build llama-cpp backend image and run audio transcription gRPC e2e tests
@@ -559,7 +559,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Pull pre-built llama-cpp backend image
@@ -586,7 +586,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Setup Node.js
@@ -611,7 +611,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Build sherpa-onnx backend image and run streaming ASR gRPC e2e tests
@@ -632,7 +632,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Build whisper backend image and run transcription gRPC e2e tests
@@ -652,7 +652,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Build parakeet-cpp backend image and run transcription gRPC e2e tests
@@ -671,7 +671,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Build sherpa-onnx backend image and run TTS gRPC e2e tests
@@ -688,7 +688,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Build ik-llama-cpp backend image and run gRPC e2e tests
@@ -705,7 +705,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       # Exercises the turboquant (llama.cpp fork) backend with KV-cache
@@ -753,7 +753,7 @@ jobs:
   #         sudo apt-get install -y --no-install-recommends \
   #             make build-essential curl unzip ca-certificates git tar
   #     - name: Setup Go
-  #       uses: actions/setup-go@v5
+  #       uses: actions/setup-go@v7
   #       with:
   #         go-version: '1.25.4'
   #     - name: Free disk space
@@ -795,7 +795,7 @@ jobs:
   #         sudo apt-get install -y --no-install-recommends \
   #             make build-essential curl unzip ca-certificates git tar
   #     - name: Setup Go
-  #       uses: actions/setup-go@v5
+  #       uses: actions/setup-go@v7
   #       with:
   #         go-version: '1.25.4'
   #     - name: Free disk space
@@ -819,7 +819,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake curl libopenblas-dev ffmpeg
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
       - name: Display Go version
         run: go version
       - name: Proto Dependencies
@@ -851,7 +851,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake curl libopenblas-dev ffmpeg
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
       - name: Display Go version
         run: go version
       - name: Proto Dependencies
@@ -883,7 +883,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake curl libopenblas-dev ffmpeg
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
       - name: Display Go version
         run: go version
       - name: Proto Dependencies
@@ -938,7 +938,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake ninja-build curl libopenblas-dev ffmpeg
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
       - name: Display Go version
         run: go version
       - name: Proto Dependencies
@@ -970,7 +970,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake curl libopenblas-dev
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
       - name: Display Go version
         run: go version
       - name: Proto Dependencies
@@ -1006,7 +1006,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake curl unzip
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
       - name: Display Go version
         run: go version
       - name: Proto Dependencies
@@ -1044,7 +1044,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake curl libopenblas-dev
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
       - name: Display Go version
         run: go version
       - name: Proto Dependencies
@@ -1081,7 +1081,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake curl libopenblas-dev ffmpeg
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
       - name: Display Go version
         run: go version
       - name: Proto Dependencies
@@ -1112,7 +1112,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Build vibevoice-cpp backend image and run TTS gRPC e2e tests
@@ -1147,7 +1147,7 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
               make build-essential curl unzip ca-certificates git tar
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Free disk space
@@ -1171,7 +1171,7 @@ jobs:
         with:
           submodules: true
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.25.4'
       - name: Build localvqe backend image and run audio_transform gRPC e2e tests
@@ -1191,7 +1191,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake curl libopenblas-dev ffmpeg
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
       # You can test your matrix by printing the current Go version
       - name: Display Go version
         run: go version
@@ -1248,7 +1248,7 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
               make build-essential curl unzip ca-certificates git tar
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.26.0'
       - name: Free disk space
@@ -1274,7 +1274,7 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
               make build-essential curl ca-certificates git tar
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: '1.26.0'
       - name: Free disk space
